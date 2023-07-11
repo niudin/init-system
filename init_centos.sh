@@ -6,6 +6,8 @@ if [[ $UID != 0 ]];then
         exit 1
 fi
 
+#set zone
+scp /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime 
 
 #init limits
 grep -rl '655360' /etc/security/limits.conf &>/dev/null
