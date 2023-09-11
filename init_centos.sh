@@ -67,7 +67,7 @@ init_iptables() {
 
 # 执行禁用服务和初始化 iptables 函数
 disable_srv
-init_iptables
+#init_iptables
 
 # 脚本结束
 echo "Initialization complete."
